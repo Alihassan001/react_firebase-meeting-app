@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.basic,
+.image {
+  background: #cb356b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.basic-input {
+  height: 40px;
+  width: 300px;
+  font-size: 20px;
+  background-color: lightblue;
+  border: none;
+  padding-left: 15px;
+}
+
+label {
+  font-size: 20px;
+  margin: 30px;
+}
+
+.BM {
+  background: #cb356b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #bd3f32,
+    #cb356b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+  width: 500px;
+}
+
+.BM h1 {
+  margin-left: 150px;
+}
+
+.meeting {
+  margin-left: 10px;
+}
+
+.baverages label {
+  margin-left: 50px;
+}
+
+.meeting button {
+  margin-left: 40%;
+  margin-top: 10%;
+}
