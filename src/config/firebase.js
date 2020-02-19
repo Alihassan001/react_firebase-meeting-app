@@ -5,7 +5,7 @@ import { firebaseCredentials } from "./credential";
 firebase.initializeApp(firebaseCredentials);
 
 const provider = new firebase.auth.FacebookAuthProvider();
-const db = firebase.firestore();
+export const db = firebase.firestore();
 
 const auth = firebase.auth();
 const storage = firebase.storage();
@@ -56,12 +56,9 @@ export const logout = () => {
   return auth.signOut();
 };
 
-export const findingMatch = () => {
-  db.collection("aliUsers")
-    .get()
-    .then(users => {
-      users.docs.map(doc => {
-        return console.log(doc.data());
-      });
-    });
+export const getAllMeetings = userId => {
+  return db
+    .collection("meetings")
+    .where("userId", "==", userId)
+    .get();
 };
